@@ -17,6 +17,19 @@
 		BF63A1C229426BCA000692CE /* Faith_sAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63A1C129426BCA000692CE /* Faith_sAppTests.swift */; };
 		BF63A1CC29426BCA000692CE /* Faith_sAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63A1CB29426BCA000692CE /* Faith_sAppUITests.swift */; };
 		BF63A1CE29426BCA000692CE /* Faith_sAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63A1CD29426BCA000692CE /* Faith_sAppUITestsLaunchTests.swift */; };
+		BF63A1DD2942A8D8000692CE /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63A1DC2942A8D8000692CE /* NewMessageViewController.swift */; };
+		BF63A1DF2942ADA9000692CE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63A1DE2942ADA9000692CE /* Message.swift */; };
+		BF63A1E129450CAF000692CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF63A1E029450CAF000692CE /* GoogleService-Info.plist */; };
+		BF63A1E429450D35000692CE /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = BF63A1E329450D35000692CE /* FirebaseDatabase */; };
+		BF63A1E629450D35000692CE /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BF63A1E529450D35000692CE /* FirebaseDatabaseSwift */; };
+		BF63A1E829450D35000692CE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BF63A1E729450D35000692CE /* FirebaseFirestore */; };
+		BF63A1EA2946F2C0000692CE /* TappedOnTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63A1E92946F2C0000692CE /* TappedOnTableView.swift */; };
+		BF63A1ED2946F881000692CE /* Faithfont-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF63A1EB2946F881000692CE /* Faithfont-Regular.ttf */; };
+		BF63A1EE2946F881000692CE /* Faithfont-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF63A1EB2946F881000692CE /* Faithfont-Regular.ttf */; };
+		BF63A1EF2946F881000692CE /* Faithfont-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF63A1EB2946F881000692CE /* Faithfont-Regular.ttf */; };
+		BF63A1F02946F881000692CE /* Wyattfont-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF63A1EC2946F881000692CE /* Wyattfont-Regular.ttf */; };
+		BF63A1F12946F881000692CE /* Wyattfont-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF63A1EC2946F881000692CE /* Wyattfont-Regular.ttf */; };
+		BF63A1F22946F881000692CE /* Wyattfont-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF63A1EC2946F881000692CE /* Wyattfont-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +64,12 @@
 		BF63A1C729426BCA000692CE /* Faith'sAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Faith'sAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF63A1CB29426BCA000692CE /* Faith_sAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faith_sAppUITests.swift; sourceTree = "<group>"; };
 		BF63A1CD29426BCA000692CE /* Faith_sAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faith_sAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BF63A1DC2942A8D8000692CE /* NewMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
+		BF63A1DE2942ADA9000692CE /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		BF63A1E029450CAF000692CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF63A1E92946F2C0000692CE /* TappedOnTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappedOnTableView.swift; sourceTree = "<group>"; };
+		BF63A1EB2946F881000692CE /* Faithfont-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Faithfont-Regular.ttf"; sourceTree = "<group>"; };
+		BF63A1EC2946F881000692CE /* Wyattfont-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wyattfont-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF63A1E629450D35000692CE /* FirebaseDatabaseSwift in Frameworks */,
+				BF63A1E429450D35000692CE /* FirebaseDatabase in Frameworks */,
+				BF63A1E829450D35000692CE /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,13 +123,19 @@
 		BF63A1A629426BC9000692CE /* Faith'sApp */ = {
 			isa = PBXGroup;
 			children = (
+				BF63A1EB2946F881000692CE /* Faithfont-Regular.ttf */,
+				BF63A1EC2946F881000692CE /* Wyattfont-Regular.ttf */,
+				BF63A1DE2942ADA9000692CE /* Message.swift */,
 				BF63A1A729426BC9000692CE /* AppDelegate.swift */,
 				BF63A1A929426BC9000692CE /* SceneDelegate.swift */,
+				BF63A1E92946F2C0000692CE /* TappedOnTableView.swift */,
 				BF63A1AB29426BC9000692CE /* ViewController.swift */,
+				BF63A1DC2942A8D8000692CE /* NewMessageViewController.swift */,
 				BF63A1AD29426BC9000692CE /* Main.storyboard */,
 				BF63A1B329426BCA000692CE /* Assets.xcassets */,
 				BF63A1B529426BCA000692CE /* LaunchScreen.storyboard */,
 				BF63A1B829426BCA000692CE /* Info.plist */,
+				BF63A1E029450CAF000692CE /* GoogleService-Info.plist */,
 				BF63A1B029426BC9000692CE /* Faith_sApp.xcdatamodeld */,
 			);
 			path = "Faith'sApp";
@@ -146,6 +174,11 @@
 			dependencies = (
 			);
 			name = "Faith'sApp";
+			packageProductDependencies = (
+				BF63A1E329450D35000692CE /* FirebaseDatabase */,
+				BF63A1E529450D35000692CE /* FirebaseDatabaseSwift */,
+				BF63A1E729450D35000692CE /* FirebaseFirestore */,
+			);
 			productName = "Faith'sApp";
 			productReference = BF63A1A429426BC9000692CE /* Faith'sApp.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +251,9 @@
 				Base,
 			);
 			mainGroup = BF63A19B29426BC9000692CE;
+			packageReferences = (
+				BF63A1E229450D35000692CE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = BF63A1A529426BC9000692CE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,7 +270,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF63A1F02946F881000692CE /* Wyattfont-Regular.ttf in Resources */,
 				BF63A1B729426BCA000692CE /* LaunchScreen.storyboard in Resources */,
+				BF63A1E129450CAF000692CE /* GoogleService-Info.plist in Resources */,
+				BF63A1ED2946F881000692CE /* Faithfont-Regular.ttf in Resources */,
 				BF63A1B429426BCA000692CE /* Assets.xcassets in Resources */,
 				BF63A1AF29426BC9000692CE /* Main.storyboard in Resources */,
 			);
@@ -244,6 +283,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF63A1F12946F881000692CE /* Wyattfont-Regular.ttf in Resources */,
+				BF63A1EE2946F881000692CE /* Faithfont-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +292,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF63A1F22946F881000692CE /* Wyattfont-Regular.ttf in Resources */,
+				BF63A1EF2946F881000692CE /* Faithfont-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +306,9 @@
 			files = (
 				BF63A1AC29426BC9000692CE /* ViewController.swift in Sources */,
 				BF63A1A829426BC9000692CE /* AppDelegate.swift in Sources */,
+				BF63A1EA2946F2C0000692CE /* TappedOnTableView.swift in Sources */,
+				BF63A1DD2942A8D8000692CE /* NewMessageViewController.swift in Sources */,
+				BF63A1DF2942ADA9000692CE /* Message.swift in Sources */,
 				BF63A1B229426BC9000692CE /* Faith_sApp.xcdatamodeld in Sources */,
 				BF63A1AA29426BC9000692CE /* SceneDelegate.swift in Sources */,
 			);
@@ -447,8 +493,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,8 +522,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -606,6 +654,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BF63A1E229450D35000692CE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BF63A1E329450D35000692CE /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF63A1E229450D35000692CE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		BF63A1E529450D35000692CE /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF63A1E229450D35000692CE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		BF63A1E729450D35000692CE /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF63A1E229450D35000692CE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		BF63A1B029426BC9000692CE /* Faith_sApp.xcdatamodeld */ = {

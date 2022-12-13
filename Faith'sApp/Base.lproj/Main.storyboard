@@ -1,24 +1,225 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Faithfont-Regular.ttf">
+            <string>Faithfont-Regular</string>
+        </array>
+        <array key="Wyattfont-Regular.ttf">
+            <string>Wyattfont-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
+        <!--Clicked View Controller-->
+        <scene sceneID="OXM-3C-YDI">
+            <objects>
+                <viewController id="QyC-w5-aQn" userLabel="Clicked View Controller" customClass="TappedOnTableView" customModule="Faith_sApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vsv-3S-iUf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VuK-Az-MNG">
+                                <rect key="frame" x="35" y="212" width="344" height="526"/>
+                                <fontDescription key="fontDescription" name="Wyattfont-Regular" family="Wyattfont" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QOM-nI-M8z">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="backgroundColor" red="0.37647058823529411" green="0.77254901960784317" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <items>
+                                    <barButtonItem title="Back" id="72H-a4-YSp">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="backClicked:" destination="QyC-w5-aQn" id="a2I-Ic-OwU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hjl-38-rMg">
+                                <rect key="frame" x="182.5" y="98" width="49.5" height="34"/>
+                                <fontDescription key="fontDescription" name="Wyattfont-Regular" family="Wyattfont" pointSize="26"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hCw-al-3Ek"/>
+                        <color key="backgroundColor" red="0.68627450980392157" green="0.88235294117647056" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="VuK-Az-MNG" firstAttribute="leading" secondItem="hCw-al-3Ek" secondAttribute="leading" constant="35" id="9Ez-Hd-lMq"/>
+                            <constraint firstItem="QOM-nI-M8z" firstAttribute="trailing" secondItem="hCw-al-3Ek" secondAttribute="trailing" id="LqO-EO-lMg"/>
+                            <constraint firstItem="Hjl-38-rMg" firstAttribute="top" secondItem="hCw-al-3Ek" secondAttribute="top" constant="50" id="MA2-ir-yfH"/>
+                            <constraint firstItem="QOM-nI-M8z" firstAttribute="leading" secondItem="hCw-al-3Ek" secondAttribute="leading" id="NG5-e0-wyJ"/>
+                            <constraint firstItem="QOM-nI-M8z" firstAttribute="top" secondItem="vsv-3S-iUf" secondAttribute="top" id="OI1-SY-1hO"/>
+                            <constraint firstItem="hCw-al-3Ek" firstAttribute="bottom" secondItem="VuK-Az-MNG" secondAttribute="bottom" constant="100" id="YYH-lQ-5u8"/>
+                            <constraint firstItem="Hjl-38-rMg" firstAttribute="centerX" secondItem="vsv-3S-iUf" secondAttribute="centerX" id="Zeg-dA-XnY"/>
+                            <constraint firstItem="VuK-Az-MNG" firstAttribute="top" secondItem="Hjl-38-rMg" secondAttribute="bottom" constant="80" id="bU0-OX-fxk"/>
+                            <constraint firstItem="hCw-al-3Ek" firstAttribute="trailing" secondItem="VuK-Az-MNG" secondAttribute="trailing" constant="35" id="l87-eg-MwL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5pR-5Q-HoN"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="Hjl-38-rMg" id="LV3-bH-XOC"/>
+                        <outlet property="messageLabel" destination="VuK-Az-MNG" id="RGc-M4-vNS"/>
+                        <segue destination="jAO-nq-h0B" kind="unwind" identifier="UnwindBaby" unwindAction="unwindToRootViewControllerWithSegue:" id="yLC-wP-XLz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eaD-vl-8ke" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="jAO-nq-h0B" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="100.00000000000001" y="695.75892857142856"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Faith_sApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EiA-Eq-3uT">
+                                <rect key="frame" x="50" y="92" width="364" height="804"/>
+                                <color key="backgroundColor" red="0.68627450980000004" green="0.88235294119999996" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" textLabel="WhG-oA-OFp" detailTextLabel="DHh-6S-Hg8" style="IBUITableViewCellStyleSubtitle" id="diO-yB-Uyc">
+                                        <rect key="frame" x="0.0" y="50" width="364" height="57.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="diO-yB-Uyc" id="kky-bR-nXE">
+                                            <rect key="frame" x="0.0" y="0.0" width="364" height="57.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WhG-oA-OFp">
+                                                    <rect key="frame" x="20" y="9" width="33" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Wyattfont-Regular" family="Wyattfont" pointSize="0.0"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DHh-6S-Hg8">
+                                                    <rect key="frame" x="20" y="32.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.68627450980000004" green="0.88235294119999996" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TZS-7h-BQl">
+                                <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                                <color key="backgroundColor" red="0.14133018255233765" green="0.78390616178512573" blue="0.076195172965526581" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <barButtonItem id="WBX-5X-Sja" userLabel="New Message">
+                                        <imageReference key="image" image="plus.app" catalog="system" symbolScale="large"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="IZV-bW-VWV" kind="show" id="gka-DQ-v3K"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJi-gl-NIZ">
+                                <rect key="frame" x="185.5" y="822" width="43.5" height="30"/>
+                                <fontDescription key="fontDescription" name="Wyattfont-Regular" family="Wyattfont" pointSize="23"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.68627450980392157" green="0.88235294117647056" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="EiA-Eq-3uT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="29O-H8-seY"/>
+                            <constraint firstItem="TZS-7h-BQl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Aym-BJ-k5y"/>
+                            <constraint firstItem="TZS-7h-BQl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GFc-Ii-of2"/>
+                            <constraint firstAttribute="bottom" secondItem="EiA-Eq-3uT" secondAttribute="bottom" id="JwI-n5-HnR"/>
+                            <constraint firstItem="EiA-Eq-3uT" firstAttribute="top" secondItem="TZS-7h-BQl" secondAttribute="bottom" id="MUm-cO-bof"/>
+                            <constraint firstItem="MJi-gl-NIZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P77-CO-vu3"/>
+                            <constraint firstItem="TZS-7h-BQl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PGJ-KJ-GEI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MJi-gl-NIZ" secondAttribute="bottom" constant="10" id="T2P-jE-nQW"/>
+                            <constraint firstItem="EiA-Eq-3uT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TBf-cK-WIg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="messageTableView" destination="EiA-Eq-3uT" id="UsX-SC-1NX"/>
+                        <outlet property="timeLabel" destination="MJi-gl-NIZ" id="dRL-HK-9oX"/>
+                        <segue destination="QyC-w5-aQn" kind="show" identifier="clickedSegue" id="GuU-yQ-u92"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="101.44927536231884" y="3.3482142857142856"/>
+        </scene>
+        <!--New Message View Controller-->
+        <scene sceneID="t0Q-4U-Tjt">
+            <objects>
+                <viewController id="IZV-bW-VWV" customClass="NewMessageViewController" customModule="Faith_sApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FsX-Vj-9lu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XqP-C2-0sO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="backgroundColor" red="0.37647058823529411" green="0.77254901960784317" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <barButtonItem title="Back" id="qlY-km-nj5" userLabel="BackButton">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="Udt-rG-bGr" kind="unwind" unwindAction="unwindToRootViewControllerWithSegue:" id="YOS-Ki-Dzj"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="zW2-uz-Te4"/>
+                                    <barButtonItem title="Send" id="phi-7v-p5B" userLabel="Send">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="messageSent:" destination="IZV-bW-VWV" id="TNW-39-Yhb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="New Message" translatesAutoresizingMaskIntoConstraints="NO" id="M6B-t2-SdZ">
+                                <rect key="frame" x="20" y="248" width="374" height="390"/>
+                                <color key="backgroundColor" red="0.68627450980000004" green="0.88235294119999996" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Faithfont-Regular" family="Faithfont" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="yes"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pcp-j1-Tzs"/>
+                        <color key="backgroundColor" red="0.68627450980000004" green="0.88235294119999996" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="M6B-t2-SdZ" firstAttribute="top" secondItem="Pcp-j1-Tzs" secondAttribute="top" constant="200" id="5vs-mg-0dD"/>
+                            <constraint firstItem="XqP-C2-0sO" firstAttribute="leading" secondItem="FsX-Vj-9lu" secondAttribute="leading" id="9ge-UD-juy"/>
+                            <constraint firstItem="Pcp-j1-Tzs" firstAttribute="trailing" secondItem="M6B-t2-SdZ" secondAttribute="trailing" constant="20" id="SnW-V2-bl6"/>
+                            <constraint firstItem="M6B-t2-SdZ" firstAttribute="centerX" secondItem="FsX-Vj-9lu" secondAttribute="centerX" id="Uvq-RM-MzB"/>
+                            <constraint firstItem="Pcp-j1-Tzs" firstAttribute="bottom" secondItem="M6B-t2-SdZ" secondAttribute="bottom" constant="200" id="XWE-vA-7uz"/>
+                            <constraint firstItem="M6B-t2-SdZ" firstAttribute="leading" secondItem="Pcp-j1-Tzs" secondAttribute="leading" constant="20" id="rSG-JN-brT"/>
+                            <constraint firstItem="XqP-C2-0sO" firstAttribute="top" secondItem="FsX-Vj-9lu" secondAttribute="top" id="tbA-5b-tnR"/>
+                            <constraint firstAttribute="trailing" secondItem="XqP-C2-0sO" secondAttribute="trailing" id="unx-Kc-De8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ddn-57-10i"/>
+                    <connections>
+                        <outlet property="newTextView" destination="M6B-t2-SdZ" id="3Nt-qf-ycf"/>
+                        <segue destination="Udt-rG-bGr" kind="unwind" identifier="unwindSend" unwindAction="unwindToRootViewControllerWithSegue:" id="9QS-rj-2PC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AgH-mJ-jHB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Udt-rG-bGr" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="853.62318840579712" y="2.6785714285714284"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
+    </resources>
 </document>
