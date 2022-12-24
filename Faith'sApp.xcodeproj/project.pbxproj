@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF26BC91294FF818006DE12E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF26BC90294FF818006DE12E /* GoogleService-Info.plist */; };
 		BF63A1A829426BC9000692CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63A1A729426BC9000692CE /* AppDelegate.swift */; };
 		BF63A1AA29426BC9000692CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63A1A929426BC9000692CE /* SceneDelegate.swift */; };
-		BF63A1AC29426BC9000692CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63A1AB29426BC9000692CE /* ViewController.swift */; };
+		BF63A1AC29426BC9000692CE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63A1AB29426BC9000692CE /* MainViewController.swift */; };
 		BF63A1AF29426BC9000692CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF63A1AD29426BC9000692CE /* Main.storyboard */; };
 		BF63A1B229426BC9000692CE /* Faith_sApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF63A1B029426BC9000692CE /* Faith_sApp.xcdatamodeld */; };
 		BF63A1B429426BCA000692CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF63A1B329426BCA000692CE /* Assets.xcassets */; };
@@ -17,19 +18,21 @@
 		BF63A1C229426BCA000692CE /* Faith_sAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63A1C129426BCA000692CE /* Faith_sAppTests.swift */; };
 		BF63A1CC29426BCA000692CE /* Faith_sAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63A1CB29426BCA000692CE /* Faith_sAppUITests.swift */; };
 		BF63A1CE29426BCA000692CE /* Faith_sAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63A1CD29426BCA000692CE /* Faith_sAppUITestsLaunchTests.swift */; };
-		BF63A1DD2942A8D8000692CE /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63A1DC2942A8D8000692CE /* NewMessageViewController.swift */; };
-		BF63A1DF2942ADA9000692CE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63A1DE2942ADA9000692CE /* Message.swift */; };
-		BF63A1E129450CAF000692CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF63A1E029450CAF000692CE /* GoogleService-Info.plist */; };
 		BF63A1E429450D35000692CE /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = BF63A1E329450D35000692CE /* FirebaseDatabase */; };
 		BF63A1E629450D35000692CE /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BF63A1E529450D35000692CE /* FirebaseDatabaseSwift */; };
 		BF63A1E829450D35000692CE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BF63A1E729450D35000692CE /* FirebaseFirestore */; };
-		BF63A1EA2946F2C0000692CE /* TappedOnTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63A1E92946F2C0000692CE /* TappedOnTableView.swift */; };
 		BF63A1ED2946F881000692CE /* Faithfont-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF63A1EB2946F881000692CE /* Faithfont-Regular.ttf */; };
 		BF63A1EE2946F881000692CE /* Faithfont-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF63A1EB2946F881000692CE /* Faithfont-Regular.ttf */; };
 		BF63A1EF2946F881000692CE /* Faithfont-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF63A1EB2946F881000692CE /* Faithfont-Regular.ttf */; };
 		BF63A1F02946F881000692CE /* Wyattfont-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF63A1EC2946F881000692CE /* Wyattfont-Regular.ttf */; };
 		BF63A1F12946F881000692CE /* Wyattfont-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF63A1EC2946F881000692CE /* Wyattfont-Regular.ttf */; };
 		BF63A1F22946F881000692CE /* Wyattfont-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF63A1EC2946F881000692CE /* Wyattfont-Regular.ttf */; };
+		BFE435CC2953D665003AE5FE /* Calculate Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE435CB2953D665003AE5FE /* Calculate Date.swift */; };
+		BFE435D02953DDEB003AE5FE /* New Message View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE435CF2953DDEB003AE5FE /* New Message View Controller.swift */; };
+		BFE435D22954C869003AE5FE /* Sent Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE435D12954C869003AE5FE /* Sent Messages.swift */; };
+		BFE435D42954E583003AE5FE /* Date Ideas View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE435D32954E583003AE5FE /* Date Ideas View Controller.swift */; };
+		BFE435D62954E7D4003AE5FE /* Cell For Row View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE435D52954E7D4003AE5FE /* Cell For Row View Controller.swift */; };
+		BFE435D829560DAE003AE5FE /* New Date View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE435D729560DAE003AE5FE /* New Date View Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,10 +53,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF26BC90294FF818006DE12E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BF63A1A429426BC9000692CE /* Faith'sApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Faith'sApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF63A1A729426BC9000692CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF63A1A929426BC9000692CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF63A1AB29426BC9000692CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF63A1AB29426BC9000692CE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BF63A1AE29426BC9000692CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF63A1B129426BC9000692CE /* Faith_sApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Faith_sApp.xcdatamodel; sourceTree = "<group>"; };
 		BF63A1B329426BCA000692CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,12 +68,14 @@
 		BF63A1C729426BCA000692CE /* Faith'sAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Faith'sAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF63A1CB29426BCA000692CE /* Faith_sAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faith_sAppUITests.swift; sourceTree = "<group>"; };
 		BF63A1CD29426BCA000692CE /* Faith_sAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faith_sAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		BF63A1DC2942A8D8000692CE /* NewMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
-		BF63A1DE2942ADA9000692CE /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		BF63A1E029450CAF000692CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		BF63A1E92946F2C0000692CE /* TappedOnTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappedOnTableView.swift; sourceTree = "<group>"; };
 		BF63A1EB2946F881000692CE /* Faithfont-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Faithfont-Regular.ttf"; sourceTree = "<group>"; };
 		BF63A1EC2946F881000692CE /* Wyattfont-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wyattfont-Regular.ttf"; sourceTree = "<group>"; };
+		BFE435CB2953D665003AE5FE /* Calculate Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calculate Date.swift"; sourceTree = "<group>"; };
+		BFE435CF2953DDEB003AE5FE /* New Message View Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "New Message View Controller.swift"; sourceTree = "<group>"; };
+		BFE435D12954C869003AE5FE /* Sent Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sent Messages.swift"; sourceTree = "<group>"; };
+		BFE435D32954E583003AE5FE /* Date Ideas View Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date Ideas View Controller.swift"; sourceTree = "<group>"; };
+		BFE435D52954E7D4003AE5FE /* Cell For Row View Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cell For Row View Controller.swift"; sourceTree = "<group>"; };
+		BFE435D729560DAE003AE5FE /* New Date View Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "New Date View Controller.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,18 +131,21 @@
 			children = (
 				BF63A1EB2946F881000692CE /* Faithfont-Regular.ttf */,
 				BF63A1EC2946F881000692CE /* Wyattfont-Regular.ttf */,
-				BF63A1DE2942ADA9000692CE /* Message.swift */,
 				BF63A1A729426BC9000692CE /* AppDelegate.swift */,
 				BF63A1A929426BC9000692CE /* SceneDelegate.swift */,
-				BF63A1E92946F2C0000692CE /* TappedOnTableView.swift */,
-				BF63A1AB29426BC9000692CE /* ViewController.swift */,
-				BF63A1DC2942A8D8000692CE /* NewMessageViewController.swift */,
+				BF63A1AB29426BC9000692CE /* MainViewController.swift */,
+				BFE435D12954C869003AE5FE /* Sent Messages.swift */,
+				BFE435D32954E583003AE5FE /* Date Ideas View Controller.swift */,
+				BFE435D729560DAE003AE5FE /* New Date View Controller.swift */,
+				BFE435D52954E7D4003AE5FE /* Cell For Row View Controller.swift */,
+				BFE435CF2953DDEB003AE5FE /* New Message View Controller.swift */,
+				BFE435CB2953D665003AE5FE /* Calculate Date.swift */,
 				BF63A1AD29426BC9000692CE /* Main.storyboard */,
 				BF63A1B329426BCA000692CE /* Assets.xcassets */,
 				BF63A1B529426BCA000692CE /* LaunchScreen.storyboard */,
 				BF63A1B829426BCA000692CE /* Info.plist */,
-				BF63A1E029450CAF000692CE /* GoogleService-Info.plist */,
 				BF63A1B029426BC9000692CE /* Faith_sApp.xcdatamodeld */,
+				BF26BC90294FF818006DE12E /* GoogleService-Info.plist */,
 			);
 			path = "Faith'sApp";
 			sourceTree = "<group>";
@@ -272,10 +281,10 @@
 			files = (
 				BF63A1F02946F881000692CE /* Wyattfont-Regular.ttf in Resources */,
 				BF63A1B729426BCA000692CE /* LaunchScreen.storyboard in Resources */,
-				BF63A1E129450CAF000692CE /* GoogleService-Info.plist in Resources */,
 				BF63A1ED2946F881000692CE /* Faithfont-Regular.ttf in Resources */,
 				BF63A1B429426BCA000692CE /* Assets.xcassets in Resources */,
 				BF63A1AF29426BC9000692CE /* Main.storyboard in Resources */,
+				BF26BC91294FF818006DE12E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,12 +313,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF63A1AC29426BC9000692CE /* ViewController.swift in Sources */,
+				BFE435D829560DAE003AE5FE /* New Date View Controller.swift in Sources */,
+				BF63A1AC29426BC9000692CE /* MainViewController.swift in Sources */,
 				BF63A1A829426BC9000692CE /* AppDelegate.swift in Sources */,
-				BF63A1EA2946F2C0000692CE /* TappedOnTableView.swift in Sources */,
-				BF63A1DD2942A8D8000692CE /* NewMessageViewController.swift in Sources */,
-				BF63A1DF2942ADA9000692CE /* Message.swift in Sources */,
 				BF63A1B229426BC9000692CE /* Faith_sApp.xcdatamodeld in Sources */,
+				BFE435CC2953D665003AE5FE /* Calculate Date.swift in Sources */,
+				BFE435D42954E583003AE5FE /* Date Ideas View Controller.swift in Sources */,
+				BFE435D02953DDEB003AE5FE /* New Message View Controller.swift in Sources */,
+				BFE435D22954C869003AE5FE /* Sent Messages.swift in Sources */,
+				BFE435D62954E7D4003AE5FE /* Cell For Row View Controller.swift in Sources */,
 				BF63A1AA29426BC9000692CE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
